@@ -1,12 +1,10 @@
 package com.example.oc.repository;
 
-import java.util.UUID;
-
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.example.oc.entity.Product;
 
-public interface DbRepository extends JpaRepository<Product, String>{
+public interface DbRepository extends MongoRepository<Product, String>{
 
 	
 }
