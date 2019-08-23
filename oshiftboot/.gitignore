@@ -1,31 +1,19 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
+target
 .idea
-*.iws
 *.iml
+*.im
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-
-### VS Code ###
-.vscode/
+*.iws
+overlays
+.DS_Store
+.settings
+*.swp
+*.log
+.project
+.classpath
+*.fmd
+.cache
+dependency-reduced-pom.xml
+kube-cluster/kubernetes
+apps/modifiedFabric8.json
+git-clones
