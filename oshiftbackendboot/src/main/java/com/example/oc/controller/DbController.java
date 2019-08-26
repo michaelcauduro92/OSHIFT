@@ -20,7 +20,10 @@ public class DbController {
 
 	@Autowired
 	DbRepository repo;
-	
+	@GetMapping("/welcome")
+	public ResponseEntity<String> welcome(){
+		return ResponseEntity.ok("welcome");
+	}
 	@GetMapping("/getData")
 	public ResponseEntity<List<String>> getData(){
 		initDb();
