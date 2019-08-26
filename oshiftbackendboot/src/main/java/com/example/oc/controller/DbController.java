@@ -26,7 +26,7 @@ public class DbController {
 	public ResponseEntity<String> welcome(){
 		return ResponseEntity.ok("welcome");
 	}
-	@PostMapping
+	@PostMapping("/insertData")
 	public ResponseEntity<String> insertDefaultData(){
 		try {			
 			initDb();
@@ -38,7 +38,6 @@ public class DbController {
 	
 	@GetMapping("/getData")
 	public ResponseEntity<List<String>> getData(){
-		
 		
 		List<String> productNameList=new ArrayList<String>(); 
 		try {
