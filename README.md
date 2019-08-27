@@ -2,7 +2,7 @@
 
 This is a simple project created to understand Oshift PaaS structure.
 
-The scenario consist in 2 spring-boot microservices, microservice A (oshiftbackend) comunicate with a mongodb database and microservices B (oshiftboot) communicate with microservice A and expose REST Api .
+The scenario consist in 2 spring-boot microservices, microservice A (oshiftbackend) comunicate with a mongodb database and expose rest endpoint and microservices B (oshiftboot) communicate with microservice A (with feign client) and expose REST enpoint .
 follow this guide that is a similar scenario and helps me to create and understand this process : https://dzone.com/articles/how-to-run-java-microservices-on-openshift-using-s
 
 So first of all you have to download oshift (i used oc 3.6.1 available at this link : https://github.com/openshift/origin/releases/tag/v3.6.1 ) and simply run cmd in the folder where you downloaded it, with docker for windows running (i obviusly used windows) run the "oc cluster up" command that allow to start a openshift cluster.
