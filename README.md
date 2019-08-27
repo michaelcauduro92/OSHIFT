@@ -12,3 +12,6 @@ then with the command new-project and new-app (read a oc command guide) you can 
 But before you need to create a mongodb image from the browser catalog and use it as a service for your project. you don't have to setup anything, follow the steps and once done you'll se a mongodb pod running on your porject, you can now use the mongo secrets as environments to inject to your spring boot microservice (in this case microservice A that need and communicate with a mongodb).
 
 now you can do the microservice's connection explained before and once done you can build and deploy your microservices in openshift, then create a route and test the connection.
+inspect the microservices structure and the endpoint so you'll understand better the functionality of those. 
+Enjoy
+Michael Cauduro
